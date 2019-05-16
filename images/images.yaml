@@ -15,9 +15,9 @@ spec:
         app: nginx
     spec:
       containers:
-      - name: nginx
-        image: pchico83/nginx
-        ports:
-        - containerPort: 80
+        - name: nginx
+          image: pchico83/nginx
+          ports:
+            - containerPort: 80
       imagePullSecrets:
-      - name: regpablo
+        - name: regpablo
