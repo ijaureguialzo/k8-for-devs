@@ -4,17 +4,17 @@ metadata:
   name: rules
 spec:
   rules:
-  - host: hola.openwebinars.com
-    http:
-      paths:
-      - path: /
-        backend:
-          serviceName: hola
-          servicePort: 80
-  - host: adios.openwebinars.com
-    http:
-      paths:
-      - path: /
-        backend:
-          serviceName: adios
-          servicePort: 80
+    - host: hola.test
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: hola
+              servicePort: 80
+    - host: adios.test
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: adios
+              servicePort: 80
